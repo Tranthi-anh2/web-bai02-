@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop Giày Adidas</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* TOP BAR */
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #f5f5f5;
+            font-size: 14px;
+        }
+
+        .topbar-right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .header img {
+            height: 50px;
+        }
+
+        /* MENU */
+        .menu {
+            background: red;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            position: relative;
+            padding: 15px 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .menu li:hover {
+            background: #cc0000;
+        }
+
+        /* BANNER */
+        .banner {
+            position: relative;
+            height: 500px;
+            display: flex;
+        }
+
+        .banner-left {
+            width: 40%;
+            background: #f28b96;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-left img {
+            width: 200px;
+        }
+
+        .banner-right {
+            width: 60%;
+            background: linear-gradient(to right, #333, #ff9aa2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner-right img {
+            width: 80%;
+        }
+
+        /* ARROWS */
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: red;
+            cursor: pointer;
+        }
+
+        .arrow.left {
+            left: 20px;
+        }
+
+        .arrow.right {
+            right: 20px;
+        }
+
+        /* DOTS */
+        .dots {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .dots span {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin: 5px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .dots .active {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div>📞 HOTLINE: 1900 1007</div>
+        <div class="topbar-right">
+            <div>Việt Nam (VND)</div>
+            <div>🛒</div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg">
+    </div>
+
+    <!-- MENU -->
+    <div class="menu">
+        <ul>
+            <li>Trang chủ ▼</li>
+            <li>Cửa hàng ▼</li>
+            <li>Thể loại ▼</li>
+            <li>Sản phẩm ▼</li>
+            <li>Tin tức ▼</li>
+            <li>Các trang ▼</li>
+        </ul>
+    </div>
+
+    <!-- BANNER -->
+    <div class="banner">
+
+        <div class="arrow left">❮</div>
+        <div class="arrow right">❯</div>
+
+        <div class="banner-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg">
+        </div>
+
+        <div class="banner-right">
+            <img src="giày 1.png"> 
+        </div>
+
+        <div class="dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+</body>
+</html>
